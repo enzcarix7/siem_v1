@@ -37,7 +37,7 @@ INSERT INTO logs (log_message) VALUES ('ERROR: System failure');
 INSERT INTO logs (log_message) VALUES ('INFO: System running smoothly');
 ```
 
-Configuration
+### Configuration
 
 You can configure the system by modifying the config.py file. Here you can set:
 	•	DB_PATH: Path to the SQLite database file (default: database.db).
@@ -46,7 +46,7 @@ You can configure the system by modifying the config.py file. Here you can set:
 	•	SENDER_EMAIL: Email address used to send alerts.
 	•	RECEIVER_EMAIL: Email address where alerts will be sent.
 
-Usage
+### Usage
 
 Running the SIEM system
 
@@ -59,7 +59,8 @@ This will start the SIEM system, which will:
 	•	Analyze logs for errors or suspicious patterns.
 	•	Send email alerts if any issues are detected.
 
-Email Alerts
+
+### Email Alerts
 
 Whenever an ERROR log is found, the system will send an email alert to the administrator with the details of the error.
 
@@ -73,7 +74,7 @@ siem_project/
 └── logs/          # Directory for logs (optional)
 ````
 
-Example
+### Example
 
 Given this folder structure:
 ````
@@ -93,15 +94,14 @@ Example log entries:
 
 If the system detects ERROR logs, it will send an alert to the administrator.
 
-Contributing
-
+### Contributing
 We welcome contributions! If you have ideas for improvements, bug fixes, or new features, feel free to submit a pull request.
 
-License
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Disclaimer
+### Disclaimer
 
 This project is provided for educational and research purposes only. The author does not take any responsibility for:
 	•	Misuse of the script
